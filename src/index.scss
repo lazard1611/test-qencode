@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+:before, :after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+textarea:focus-visible {
+  outline: 0;
+}
+
+input {
+  outline: none;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+img, svg, video {
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+picture,
+svg {
+  display: block;
+}
+
+@import "main";
+@include font_face('BasisGrotesquePro-Regular', 'BasisGrotesquePro', 400);
+@include font_face('BasisGrotesquePro-Medium', 'BasisGrotesquePro', 500);
+@include font_face('BasisGrotesquePro-Bold', 'BasisGrotesquePro', 700);
+
+:root {
+  --height-header: 6rem;
+
+  --gl-indent: 2rem;
+}
+
+html {
+  height: 100%;
+  font-family: $font_1;
+  line-height: 1.33;
+  font-size: 10px;
+
+  @include bp($small - 1) {
+    font-size: calc(100vw / 360 * 10);
+  }
+}
+
+body {
+  position: relative;
+  display: block;
+
+  height: 100%;
+  margin: auto;
+  font-size: $fontSizeBase;
+  color: $colorTextBase;
+}
+
+input:-webkit-autofill {
+  background-color: $gray;
+  box-shadow: 0 0 0px 1000px $gray inset;
+}
+
+input:-webkit-autofill:focus {
+  background-color: $gray;
+}

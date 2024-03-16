@@ -1,0 +1,45 @@
+//---------------------------------------------fonts
+$font_1: 'Nunito', sans-serif;
+$fontSizeBase: 1.6rem;
+//---------------------------------------------fonts###
+//---------------------------------------------Points
+$point_0: 1440px;
+$point_1: 1200px;
+$point_2: 1024px;
+$point_3: 768px;
+$point_4: 375px;
+//---------------------------------------------Points###
+//---------------------------------------------layout
+$pageWidth: 40rem;
+//---------------------------------------------layout###
+//---------------------------------------------colors
+$black: #000000;
+$grayLight: #BEBEBE;
+$grayDark: #373737;
+
+$white: #fff;
+$black87: rgba(0, 0, 0, 0.87);
+$gray: #F8F8F8;
+$gray_2: #b4b4b4;
+$gray_3: #7e7e7e;
+$gray_4: #d0cfcf;
+$yellow: #F4E041;
+$yellowHover: #ffe302;
+$blue: #316fea;
+$red: #cb3d40;
+
+$colorTextBase: $black87;
+$colorLinkBase: $blue;
+$bodyBg: $gray;
+//---------------------------------------------colors###
+//---------------------------------------------global values
+$glRadius: 0.4rem;
+//---------------------------------------------global values###
+//---------------------------------------------media points
+$desktopLg: 1920px;
+$desktop: 1440px;
+$laptop: 1024px;
+$tabletPortrait: 991px;
+$tablet: 768px;
+$small: 360px;
+//---------------------------------------------media points###

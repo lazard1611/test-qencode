@@ -1,0 +1,46 @@
+@import '../../main';
+.form_file__element {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+
+	width: 100%;
+
+	font-weight: 400;
+	font-size: 1.6rem;
+	line-height: 1.62;
+}
+
+.form_file__input {
+	display: none;
+}
+
+.form_file__label {
+	padding: 1.3rem 1.5rem;
+	color: $black87;
+	border: 1px solid $black87;
+	border-radius: 0.4rem 0 0 0.4rem;
+
+	.error & {
+		border: 2px solid $red;
+	}
+}
+
+.form_file__name {
+	flex: auto;
+	padding: 1.3rem 1.5rem;
+	color: $gray_3;
+	border: 1px solid $gray_2;
+	border-radius: 0 0.4rem 0.4rem 0;
+	border-left-color: transparent;
+
+	.error & {
+		border: 2px solid $red;
+		border-left: none;
+	}
+}
+
+.form_file__error {
+	color: $red;
+	font-size: 1.2rem;
+}

@@ -1,0 +1,12 @@
+.heading {
+	font-size: 4rem;
+	font-weight: 400;
+	line-height: 1;
+
+	text-align: center;
+	color: inherit;
+
+	&:not(:last-child) {
+		margin-bottom: 5rem;
+	}
+}

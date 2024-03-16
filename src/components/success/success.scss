@@ -1,0 +1,16 @@
+.success {
+
+}
+
+.success__pic {
+	margin: 0 auto;
+	width: 32.8rem;
+	height: 29rem;
+
+	img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}

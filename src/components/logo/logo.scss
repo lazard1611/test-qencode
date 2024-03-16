@@ -1,0 +1,10 @@
+.logo {
+	display: block;
+	width: 17.9rem;
+	height: 3.2rem;
+	margin: 0 auto;
+
+	&:not(:last-child) {
+		margin-bottom: 8rem;
+	}
+}

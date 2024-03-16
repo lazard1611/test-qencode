@@ -1,0 +1,62 @@
+@import '../../main';
+.form_radio__element {
+	&:not(:last-child) {
+		margin-bottom: 0.7rem;
+	}
+}
+
+.form_radio__input {
+	display: none;
+}
+
+.form_radio__label {
+	position: relative;
+	padding-left: 3.2rem;
+
+	font-weight: 400;
+	font-size: 1.6rem;
+	line-height: 1.62;
+
+	color: $black87;
+	cursor: pointer;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: -1px;
+		left: 0;
+		width: 2rem;
+		height: 2rem;
+
+		transition: border-color 0.3s ease;
+		border-radius: 100%;
+		border: 1px solid $gray_4;
+		cursor: pointer;
+
+		.form_radio__input:checked + & {
+			border-color: $blue;
+		}
+	}
+
+	&:after {
+		content: '';
+		top: 0.4rem;
+		left: 0.5rem;
+		width: 1rem;
+		height: 1rem;
+
+		transition: opacity 0.3s ease;
+		position: absolute;
+		border-radius: 100%;
+		background: $blue;
+		will-change: opacity;
+		opacity: 0;
+
+		.form_radio__input:checked + & {
+			opacity: 1;
+		}
+	}
+}
+
+
+

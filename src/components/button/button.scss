@@ -1,0 +1,33 @@
+@import '../../main';
+
+.btn {
+	display: inline-flex;
+	align-items: center;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+
+	padding: 0 1.8rem;
+	min-width: 10rem;
+	min-height: 3.4rem;
+
+	font-weight: 400;
+	font-size: 1.6rem;
+	line-height: 1.62;
+
+	background-color: $yellow;
+	border-radius: 4rem;
+
+	transition: background-color 0.3s ease;
+
+	&:focus,
+	&:hover {
+		background-color: $yellowHover;
+	}
+
+	&:disabled {
+		background-color: $gray_2;
+		color: $white;
+		pointer-events: none;
+	}
+}

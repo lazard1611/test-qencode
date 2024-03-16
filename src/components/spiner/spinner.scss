@@ -1,0 +1,27 @@
+@import '../../main';
+
+.spinner {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.spinner__element {
+	width: 4.8rem;
+	height: 4.8rem;
+	color: $blue;
+	animation: animation_spinner 1.2s linear infinite;
+}
+
+@keyframes animation_spinner {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
